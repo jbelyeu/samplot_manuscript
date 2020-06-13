@@ -6,6 +6,7 @@ Example data and commands for the figures in the samplot manuscript.
 * Get a copy of the GRCh37 reference genome (I recommend using GGD, see below)
 * Edit the first line of the script `generate_figures.sh`. Replace `/uufs/chpc.utah.edu/common/HIPAA/u1072557/giab/ashkenazi_trio_dataset2/data/hs37d5.fa` with your own copy of the GRCh37 reference genome fasta
 * Run the `bash generate_figures.sh` script. Figures will overwrite images in the plots directories
+* IGV images must be manually generated as they require options not available in batch mode
 
 
 ## GGD-managed reference genome
