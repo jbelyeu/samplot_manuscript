@@ -31,8 +31,8 @@ samplot plot \
     -c 4 -s 99813786 -e 99817098 \
     -o plots/figure2/DUP_4_99813786_99817098.png\
     -b \
-     $hg002_illumina\
-    -n "Illumina (~300x 2x150bp)" "ONT (~7x ultralong)"\
+     $hg002_illumina \
+    -n "Illumina (~300x 2x150bp)"\
     -t DUP -H 2
 
 #figure 2B
@@ -54,7 +54,7 @@ samplot plot \
     -n "Illumina (~30x 2x150bp)"\
     -t CTX -H 2
 
-#supplemental figure 1A
+#supplemental figure 1B
 svviz $b37_ref\
     1 156526704 156528936 \
     -b $hg002_illumina\
@@ -86,10 +86,14 @@ svviz $b37_ref\
     -t 'del' \
     -e plots/supplemental_figure2/1_156532935_156534935_all_types.svviz.svg\
 
-#supplemental figure 4: trio
+#supplemental figure 3: bamsnap (requires python 3)
+#supplemental figure 4: IGV screenshots
+
+
+#supplemental figure 5: trio
 samplot plot \
     -c 1 -s 156526704 -e 156528936 \
-    -o plots/supplemental_figure4/DEL_1_156526704_156528936_trio.png\
+    -o plots/supplemental_figure5/DEL_1_156526704_156528936_trio.png\
     -b \
      $hg002_illumina\
      $hg003\
@@ -97,10 +101,10 @@ samplot plot \
      -n "HG002 (child)" "HG003 (father)" "HG004 (mother)"\
     -t DEL
 
-#supplemental figure 5A
+#supplemental figure 6A
 samplot plot \
     -c 4 -s 99813786 -e 99817098 \
-    -o plots/supplemental_figure5/DUP_4_99813786_99817098_all_types.png \
+    -o plots/supplemental_figure6/DUP_4_99813786_99817098_all_types.png \
     -b \
      $hg002_illumina\
      $hg002_ont\
@@ -108,10 +112,10 @@ samplot plot \
     -n "Illumina (~300x 2x150bp)" "ONT (~7x ultralong)" "PacBio (~70X HP-partitioned)"\
     -t DUP
 
-#supplemental figure 5B
+#supplemental figure 6B
 samplot plot \
     -c 12 -s 12544867 -e 12546613 \
-    -o plots/supplemental_figure5/INV_12_12544867_12546613_all_types.png \
+    -o plots/supplemental_figure6/INV_12_12544867_12546613_all_types.png \
     -b \
      $hg002_illumina\
      $hg002_ont\
@@ -119,10 +123,10 @@ samplot plot \
     -n "Illumina (~300x 2x150bp)" "ONT (~7x ultralong)" "PacBio (~70X HP-partitioned)"\
     -t INV
 
-#supplemental figure 5C
+#supplemental figure 6C
 samplot plot \
     -c 1 -s 156532935 -e 156534935 \
-    -o plots/supplemental_figure5/1_156532935_156534935_all_types.png\
+    -o plots/supplemental_figure6/1_156532935_156534935_all_types.png\
     -b \
      $hg002_illumina\
      $hg002_ont\
